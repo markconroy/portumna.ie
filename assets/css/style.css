@@ -3,7 +3,9 @@
   --green: #2c633c;
   --black: #21201c;
   --white: #fff;
+  --spacing: 1rem;
   --flow-space: 2.5rem;
+  --border: 1px solid var(--green);
 }
 
 *,
@@ -32,6 +34,25 @@ h4,
 h5,
 h6 {
   color: var(--green);
+}
+
+details {
+  padding-inline: var(--spacing);
+  border: var(--border);
+}
+
+summary {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+summary::before {
+  content: '▶';
+  margin-inline-end: 0.5rem;
+  color: var(--green);
+}
+details[open] summary::before {
+  content: '▼';
 }
 
 .header,
