@@ -13,6 +13,7 @@
   --spacing-large: 2.5rem;
   --flow-space: 2.5rem;
   --border: 2px solid var(--green);
+  --transition-time: 0.3s;
 }
 
 *,
@@ -46,7 +47,16 @@ h6 {
 a {
   color: var(--red);
   font-weight: bold;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  transition: var(--transition-time);
 }
+a:hover,
+a:focus-visible {
+  color: var(--green);
+  text-decoration: none;
+}
+
 details {
   padding-inline: var(--spacing);
   border: var(--border);
@@ -117,8 +127,12 @@ details[open] summary::before {
   list-style: none;
   padding: 0;
 }
+
+.cards > li {
+  height: 100%;
+}
 .card {
-  /* background-color: var(--color-grey-lightest); */
+  height: 100%;
   border: var(--border);
   padding: var(--spacing-large);
   border-radius: 0.5rem;
