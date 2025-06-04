@@ -44,6 +44,11 @@ h6 {
   color: var(--green);
 }
 
+h1 {
+  text-wrap: balance;
+  text-align: center;
+}
+
 a {
   color: var(--red);
   font-weight: bold;
