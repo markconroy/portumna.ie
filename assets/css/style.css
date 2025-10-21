@@ -150,3 +150,13 @@ details[open] summary::before {
   transform: translateY(-5px);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
+
+.notice {
+  background-color: var(--red);
+  box-shadow: 10px 10px 0px 0px var(--black);
+  padding: var(--spacing);
+  border-radius: 0.5rem;
+  color: var(--white);
+  font-weight: bold;
+  text-align: center;
+}
