@@ -119,6 +119,7 @@ details[open] summary::before {
 .get-tickets:focus-visible {
   transform: scale(1.05);
   background-color: var(--green);
+  color: var(--white);
   text-decoration: underline;
 }
 .get-tickets:active {
