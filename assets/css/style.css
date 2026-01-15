@@ -71,6 +71,7 @@ summary {
   cursor: pointer;
   display: flex;
   align-items: center;
+  padding-block: var(--spacing);
 }
 summary::before {
   content: '▶';
@@ -79,6 +80,13 @@ summary::before {
 }
 details[open] summary::before {
   content: '▼';
+}
+details[open] summary {
+  border-block-end: var(--border);
+}
+details + details {
+  margin-block-start: var(--flow-space);
+
 }
 
 .header,
@@ -153,8 +161,15 @@ details[open] summary::before {
 }
 
 .notice {
-  background-color: var(--red);
+  background-color: var(--green);
   padding: var(--spacing);
   border-radius: 0.5rem;
   color: var(--white);
+  text-align: center;
+  font-size: 150%;
+}
+
+.notice .get-tickets {
+  background-color: var(--white);
+  color: var(--red);
 }
