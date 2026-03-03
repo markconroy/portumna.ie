@@ -86,7 +86,10 @@ details[open] summary {
 }
 details + details {
   margin-block-start: var(--flow-space);
+}
 
+hr {
+  color: white;
 }
 
 .header,
