@@ -176,3 +176,19 @@ hr {
   background-color: var(--white);
   color: var(--red);
 }
+
+.teaser-list {
+  list-style: none;
+  padding: 0;
+}
+
+.teaser-list > li + li {
+  margin-block-start: var(--flow-space);
+}
+
+.teaser {
+  padding: var(--spacing-large);
+  background-color: var(--color-grey-lightest);
+  border: var(--border);
+  border-radius: 0.5rem;
+}
